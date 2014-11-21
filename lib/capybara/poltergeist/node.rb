@@ -120,6 +120,10 @@ module Capybara::Poltergeist
       command :drag, other.id
     end
 
+    def drag_by(x, y)
+      command :drag_by, x, y
+    end
+
     def trigger(event)
       command :trigger, event
     end
